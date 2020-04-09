@@ -29,6 +29,7 @@ const app = new Vue({
 
     router: new VueRouter({
         mode: 'history',
+        linkActiveClass: 'font-bold',
         routes
     })
 });
