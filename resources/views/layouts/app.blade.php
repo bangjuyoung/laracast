@@ -40,13 +40,20 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section class="mb-5">
                         <h5 class="mb-5 uppercase font-bold text-base">Doodles</h5>
                         <ul>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/mascot">Mascot</router-link></li>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/illustrations">Illustrations</router-link></li>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/loaders-and-animations">Loaders and Animations</router-link></li>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/wallpapers">Wallpapers</router-link></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h5 class="mb-5 uppercase font-bold text-base">Stats</h5>
+                        <ul>
+                            <li class="leading-10 text-sm"><router-link class="text-black" to="/site-stats">Site Stats</router-link></li>
                         </ul>
                     </section>
                 </aside>
