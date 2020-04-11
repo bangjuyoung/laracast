@@ -21,17 +21,17 @@
 </head>
 <body class="font-sans">
     <div id="app">
-        <div class="container mx-auto">
-            <header class="mb-8 py-6">
-                <h1>
-                    <img src="{{ asset('images/logo.svg') }}" alt="Laracasts">
-                </h1>
-            </header>
+        <header class="mb-8 py-6 px-8" style="background: url('https://assets.laracasts.com/images/splash.svg') no-repeat 0 0;">
+            <h1>
+                <img src="{{ asset('images/logo.svg') }}" alt="Laracasts">
+            </h1>
+        </header>
 
+        <div class="container px-8 pb-10">
             <main class="flex">
-                <aside class="w-1/5">
-                    <section class="mb-8">
-                        <h5 class="mb-3 uppercase font-bold">The Brand</h5>
+                <aside class="w-64 pt-8">
+                    <section class="mb-10">
+                        <h5 class="mb-5 uppercase font-bold text-base">The Brand</h5>
                         <ul>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/" exact>Logo</router-link></li>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/logo-symbol">Logo Symbol</router-link></li>
@@ -41,7 +41,7 @@
                     </section>
 
                     <section>
-                        <h5 class="mb-3 uppercase font-bold">Doodles</h5>
+                        <h5 class="mb-5 uppercase font-bold text-base">Doodles</h5>
                         <ul>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/mascot">Mascot</router-link></li>
                             <li class="leading-10 text-sm"><router-link class="text-black" to="/illustrations">Illustrations</router-link></li>
