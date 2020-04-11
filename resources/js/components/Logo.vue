@@ -5,37 +5,45 @@
             Full Logo
         </h1>
 
-        <div class="mb-10">
-            <picture style="height: 382px;" class="block shadow rounded-lg flex items-center justify-center mb-6">
-                <img src="/images/logo.svg" alt="logo">
-            </picture>
-            <div class="flex justify-between items-center">
-                <p>
-                    Original Logo on <strong>white</strong> background
-                </p>
-                <a href="/images/logo.svg" class="font-bold border border-gray-300 px-8 py-2 rounded-full text-black text-xs">logo.svg</a>
-            </div>
-        </div>
+        <LogoSection
+            classes="mb-10"
+        >
+        </LogoSection>
 
-        <div>
-            <picture style="height: 382px;" class="bg-blue-600 block shadow rounded-lg flex items-center justify-center mb-6">
-                <img src="/images/negative-logo.svg" alt="logo">
-            </picture>
-            <div class="flex justify-between items-center">
-                <p>
-                    Negative Logo on <strong>dark</strong> background
-                </p>
-                <a href="/images/logo.svg" class="font-bold border border-gray-300 px-8 py-2 rounded-full text-black text-xs">negative-logo.svg</a>
-            </div>
-        </div>
+        <LogoSection
+            classes="mb-10"
+            theme="bg-blue-700"
+            src="/images/negative-logo.svg"
+        >
+            <template slot="description">
+                Negative logo on <strong class="font-bold">dark</strong> background
+            </template>
+            <template slot="link-name">
+                negative-logo.svg
+            </template>
+        </LogoSection>
+
+        <LogoSection
+            theme="bg-black"
+            src="/images/pure-negative-logo.svg"
+        >
+            <template slot="description">
+                Pure negative logo on <strong class="font-bold">dark</strong> background
+            </template>
+            <template slot="link-name">
+                pure-negative-logo.svg
+            </template>
+        </LogoSection>
 
     </div>
 
 </template>
 
 <script>
+    import LogoSection from "./LogoSection";
     export default {
-        name: "Logo"
+        name: "Logo",
+        components: {LogoSection}
     }
 </script>
 

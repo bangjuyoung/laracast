@@ -2004,6 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LogoSection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LogoSection */ "./resources/js/components/LogoSection.vue");
 //
 //
 //
@@ -2015,6 +2016,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Logo",
+  components: {
+    LogoSection: _LogoSection__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LogoSection.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LogoSection.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -2040,7 +2090,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Logo"
+  name: "LogoSection",
+  props: {
+    'classes': {
+      "default": ''
+    },
+    'theme': {
+      "default": ''
+    },
+    'src': {
+      "default": '/images/logo.svg'
+    }
+  }
 });
 
 /***/ }),
@@ -37651,86 +37712,126 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
+  return _c(
+    "div",
+    [
       _c(
         "h1",
         { staticClass: "font-normal text-3xl text-gray-700 leading-none mb-8" },
         [_vm._v("\n        Full Logo\n    ")]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "mb-10" }, [
-        _c(
-          "picture",
-          {
-            staticClass:
-              "block shadow rounded-lg flex items-center justify-center mb-6",
-            staticStyle: { height: "382px" }
-          },
-          [_c("img", { attrs: { src: "/images/logo.svg", alt: "logo" } })]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex justify-between items-center" }, [
-          _c("p", [
-            _vm._v("\n                Original Logo on "),
-            _c("strong", [_vm._v("white")]),
-            _vm._v(" background\n            ")
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "font-bold border border-gray-300 px-8 py-2 rounded-full text-black text-xs",
-              attrs: { href: "/images/logo.svg" }
-            },
-            [_vm._v("logo.svg")]
-          )
-        ])
-      ]),
+      _c("LogoSection", { attrs: { classes: "mb-10" } }),
       _vm._v(" "),
-      _c("div", [
-        _c(
-          "picture",
-          {
-            staticClass:
-              "bg-blue-600 block shadow rounded-lg flex items-center justify-center mb-6",
-            staticStyle: { height: "382px" }
-          },
-          [
-            _c("img", {
-              attrs: { src: "/images/negative-logo.svg", alt: "logo" }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex justify-between items-center" }, [
-          _c("p", [
-            _vm._v("\n                Negative Logo on "),
-            _c("strong", [_vm._v("dark")]),
-            _vm._v(" background\n            ")
+      _c(
+        "LogoSection",
+        {
+          attrs: {
+            classes: "mb-10",
+            theme: "bg-blue-700",
+            src: "/images/negative-logo.svg"
+          }
+        },
+        [
+          _c("template", { slot: "description" }, [
+            _vm._v("\n            Negative logo on "),
+            _c("strong", { staticClass: "font-bold" }, [_vm._v("dark")]),
+            _vm._v(" background\n        ")
           ]),
           _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "font-bold border border-gray-300 px-8 py-2 rounded-full text-black text-xs",
-              attrs: { href: "/images/logo.svg" }
-            },
-            [_vm._v("negative-logo.svg")]
-          )
-        ])
-      ])
+          _c("template", { slot: "link-name" }, [
+            _vm._v("\n            negative-logo.svg\n        ")
+          ])
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c(
+        "LogoSection",
+        { attrs: { theme: "bg-black", src: "/images/pure-negative-logo.svg" } },
+        [
+          _c("template", { slot: "description" }, [
+            _vm._v("\n            Pure negative logo on "),
+            _c("strong", { staticClass: "font-bold" }, [_vm._v("dark")]),
+            _vm._v(" background\n        ")
+          ]),
+          _vm._v(" "),
+          _c("template", { slot: "link-name" }, [
+            _vm._v("\n            pure-negative-logo.svg\n        ")
+          ])
+        ],
+        2
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { class: _vm.classes }, [
+    _c(
+      "picture",
+      {
+        staticClass:
+          "block shadow rounded-lg flex items-center justify-center mb-6",
+        class: _vm.theme,
+        staticStyle: { height: "382px" }
+      },
+      [_c("img", { attrs: { src: _vm.src, alt: "logo" } })]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "flex justify-between items-center" }, [
+      _c(
+        "p",
+        { staticClass: "font-thin" },
+        [
+          _vm._t("description", [
+            _vm._v("\n                Original Logo on "),
+            _c("strong", { staticClass: "font-bold" }, [_vm._v("white")]),
+            _vm._v(" background\n            ")
+          ])
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass:
+            "font-bold border border-gray-300 px-8 py-2 rounded-full text-black text-xs hover:bg-blue-100",
+          attrs: { href: _vm.src }
+        },
+        [
+          _vm._t("link-name", [
+            _vm._v("\n                logo.svg\n            ")
+          ])
+        ],
+        2
+      )
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -53394,6 +53495,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_template_id_1c796f16_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Logo_vue_vue_type_template_id_1c796f16_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/LogoSection.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/LogoSection.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LogoSection_vue_vue_type_template_id_d67c8ec2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true& */ "./resources/js/components/LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true&");
+/* harmony import */ var _LogoSection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LogoSection.vue?vue&type=script&lang=js& */ "./resources/js/components/LogoSection.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LogoSection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LogoSection_vue_vue_type_template_id_d67c8ec2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LogoSection_vue_vue_type_template_id_d67c8ec2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "d67c8ec2",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/LogoSection.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/LogoSection.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/LogoSection.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoSection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./LogoSection.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LogoSection.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoSection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true& ***!
+  \********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoSection_vue_vue_type_template_id_d67c8ec2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/LogoSection.vue?vue&type=template&id=d67c8ec2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoSection_vue_vue_type_template_id_d67c8ec2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LogoSection_vue_vue_type_template_id_d67c8ec2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
