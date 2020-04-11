@@ -36,6 +36,7 @@
 
         methods: {
             fetchAchievements() {
+                // hashed API Tokens
                 axios
                     .get(`http://vue-app.test/api/achievements?api_token=${this.token}`)
                     .catch(error => {

@@ -2060,6 +2060,7 @@ __webpack_require__.r(__webpack_exports__);
     fetchAchievements: function fetchAchievements() {
       var _this = this;
 
+      // hashed API Tokens
       axios.get("http://vue-app.test/api/achievements?api_token=".concat(this.token))["catch"](function (error) {
         _this.message = error.response.data.message;
         _this.achievements = [];
