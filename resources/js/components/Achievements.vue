@@ -4,6 +4,10 @@
             Your Achievements
         </h1>
 
+        <div class="mb-8">
+            <button type="button" @click="generateToken" class="py-2 px-4 border rounded bg-blue-500 text-white">Generate a new Api Token</button>
+        </div>
+
         <input
             type="text"
             placeholder="Your Laracasts API token"
@@ -47,7 +51,16 @@
                         this.achievements = data;
                         this.message = '';
                     });
-            }
+            },
+            generateToken() {
+                axios.patch('http://vue-app.test/api/access')
+                    .catch(error => {
+                        console.log(error.response);
+                    })
+                    .then(({ data }) => {
+                        this.token = data.token;
+                    })
+            },
         },
     }
 </script>

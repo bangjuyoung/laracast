@@ -2047,6 +2047,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Achievements",
   data: function data() {
@@ -2068,6 +2072,16 @@ __webpack_require__.r(__webpack_exports__);
         var data = _ref.data;
         _this.achievements = data;
         _this.message = '';
+      });
+    },
+    generateToken: function generateToken() {
+      var _this2 = this;
+
+      axios.patch('http://vue-app.test/api/access')["catch"](function (error) {
+        console.log(error.response);
+      }).then(function (_ref2) {
+        var data = _ref2.data;
+        _this2.token = data.token;
       });
     }
   }
@@ -20015,6 +20029,18 @@ var render = function() {
       { staticClass: "font-normal text-3xl text-gray-700 leading-none mb-8" },
       [_vm._v("\n        Your Achievements\n    ")]
     ),
+    _vm._v(" "),
+    _c("div", { staticClass: "mb-8" }, [
+      _c(
+        "button",
+        {
+          staticClass: "py-2 px-4 border rounded bg-blue-500 text-white",
+          attrs: { type: "button" },
+          on: { click: _vm.generateToken }
+        },
+        [_vm._v("Generate a new Api Token")]
+      )
+    ]),
     _vm._v(" "),
     _c("input", {
       directives: [
